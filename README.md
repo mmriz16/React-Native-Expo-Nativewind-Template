@@ -10,6 +10,20 @@ A modern React Native template built with Expo and Nativewind (Tailwind CSS for 
 - **Nativewind** - Tailwind CSS for React Native
 - **TypeScript** - Type-safe JavaScript
 
+## 📌 Current Versions
+
+This template is built with the following versions:
+
+- **Expo SDK**: `~54.0.27`
+- **React Native**: `0.81.5`
+- **React**: `19.1.0`
+- **Nativewind**: `^4.2.1`
+- **Expo Router**: `~6.0.17`
+- **TypeScript**: `~5.9.2`
+- **React Native Reanimated**: `~4.1.1`
+- **React Native Safe Area Context**: `~5.6.0`
+- **Tailwind CSS**: `^3.4.18`
+
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
