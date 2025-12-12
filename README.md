@@ -24,7 +24,81 @@ This template is built with the following versions:
 - **React Native Safe Area Context**: `~5.6.0`
 - **Tailwind CSS**: `^3.4.18`
 
-## 📋 Prerequisites
+## � Checking & Updating Dependencies
+
+### Check for Outdated Packages
+
+To see which packages have newer versions available:
+
+```bash
+npm outdated
+```
+
+This will show a table with current, wanted, and latest versions.
+
+### Update All Dependencies
+
+**Using npm-check-updates (recommended):**
+
+```bash
+# Install npm-check-updates globally
+npm install -g npm-check-updates
+
+# Check for updates (preview only)
+ncu
+
+# Update all dependencies in package.json
+ncu -u
+
+# Install updated packages
+npm install
+```
+
+**Using npm update:**
+
+```bash
+# Update packages within semver range
+npm update
+```
+
+### Update Expo SDK
+
+Expo has a dedicated command to upgrade SDK versions:
+
+```bash
+# Check current Expo version
+npx expo --version
+
+# Upgrade to latest SDK
+npx expo install --fix
+
+# Or upgrade to specific SDK version
+npx expo install expo@latest
+```
+
+> ⚠️ **Important**: When upgrading Expo SDK, always check the [Expo Changelog](https://docs.expo.dev/changelog/) for breaking changes.
+
+### Update Specific Packages
+
+```bash
+# Update a specific package
+npm install <package-name>@latest
+
+# Examples:
+npm install nativewind@latest
+npm install react-native@latest
+npm install expo-router@latest
+```
+
+### Best Practices
+
+1. **Always test after updating** - Run `npm start` and test on all platforms
+2. **Update incrementally** - Don't update all major versions at once
+3. **Check compatibility** - Verify Expo SDK compatibility with React Native version
+4. **Backup first** - Commit your changes before major updates
+5. **Read changelogs** - Check for breaking changes before updating
+
+## �📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -40,7 +114,7 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone <your-repo-url>
-   cd mobile-expo-test
+   cd <created-folder-name>
    ```
 
 2. **Install dependencies**
@@ -93,12 +167,12 @@ npm run web
 
 ```
 .
-├── app/                    # App directory (Expo Router)
+├── app/                   # App directory (Expo Router)
 │   ├── _layout.tsx        # Root layout
 │   ├── index.tsx          # Home screen
 │   └── global.css         # Global styles
-├── assets/                 # Images, fonts, and other assets
-├── components/             # Reusable components
+├── assets/                # Images, fonts, and other assets
+├── components/            # Reusable components
 ├── app.json               # Expo configuration
 ├── babel.config.js        # Babel configuration
 ├── tailwind.config.js     # Tailwind CSS configuration
